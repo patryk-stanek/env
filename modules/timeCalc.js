@@ -4,8 +4,6 @@ function timeCalc(time) {
     var minutes = Math.floor(time / 60);
     var seconds = time % 60;
     var x = '';
-    var y;
-    var z;
 
     switch (true) {
         case (hours>=1):
