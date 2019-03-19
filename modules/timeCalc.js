@@ -3,15 +3,19 @@ function timeCalc(time) {
     time %= 3600;
     var minutes = Math.floor(time / 60);
     var seconds = time % 60;
+    var x = '';
+    var y;
+    var z;
 
     switch (true) {
         case (hours>=1):
-            console.log('hours: ' + hours);
+            x = hours + 'h';
         case (minutes>=1):
-            console.log('minutes: ' + minutes);
+            x = x + minutes + 'm';
         default:
-            console.log("seconds: " + seconds);
-    }
+            x = x + seconds + 's';
+    };
+    return x;
 };
 
 exports.print = timeCalc;
